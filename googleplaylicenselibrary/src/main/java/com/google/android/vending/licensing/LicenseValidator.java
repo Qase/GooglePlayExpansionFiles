@@ -92,6 +92,13 @@ class LicenseValidator {
         ResponseData data = null;
         if (responseCode == LICENSED || responseCode == NOT_LICENSED ||
                 responseCode == LICENSED_OLD_KEY) {
+
+            if (signedData == null) {
+                Log.e(TAG, "Signature verification failed.");
+                handleInvalidResponse();
+                return;
+            }
+
             // Verify signature.
             try {
                 Signature sig = Signature.getInstance(SIGNATURE_ALGORITHM);
