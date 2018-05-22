@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download successfully completed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_complete">Stahování dokončeno</string>
+
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download failed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_failed">Stahování bylo neúspešné</string>
+
+
+    <string name="state_unknown">Zahájení…</string>
+    <string name="state_idle">Čeká se na začátek stahování</string>
+    <string name="state_fetching_url">Hledání souborů ke stažení</string>
+    <string name="state_connecting">Připojování k serveru</string>
+    <string name="state_downloading">Stahování souborů</string>
+    <string name="state_completed">Stahování bylo ukončeno</string>
+    <string name="state_paused_network_unavailable">Stahování bylo pozastaveno (chyba sítě)</string>
+    <string name="state_paused_network_setup_failure">Stahování bylo pozastaveno, otestujte připojení</string>
+    <string name="state_paused_by_request">Stahování bylo pozastaveno</string>
+    <string name="state_paused_wifi_unavailable">Stahování bylo pozastaveno (nedostupná WiFi)</string>
+    <string name="state_paused_wifi_disabled">Stahování bylo pozastaveno (zakázaná WiFi)</string>
+    <string name="state_paused_roaming">Stahování bylo pozastaveno (roaming)</string>
+    <string name="state_paused_sdcard_unavailable">Stahování bylo pozastaveno (nedostupné externí úložiště)</string>
+    <string name="state_failed_unlicensed">Stahování bylo neúspěšné (licence)</string>
+    <string name="state_failed_fetching_url">Stahování bylo neúspěšné (nelze najít vzdálené soubory)</string>
+    <string name="state_failed_sdcard_full">Stahování bylo neúspěšné (plná paměť)</string>
+    <string name="state_failed_cancelled">Stahování bylo zrušeno</string>
+    <string name="state_failed">Stahování bylo neúspěšné</string>
+
+    <string name="kilobytes_per_second">%1$s KB/s</string>
+    <string name="time_remaining">Zbývající čas: %1$s</string>
+    <string name="time_remaining_notification">%1$s zbývá</string>
+</resources>
