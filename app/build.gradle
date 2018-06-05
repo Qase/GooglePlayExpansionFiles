@@ -9,12 +9,12 @@ android {
         applicationId "wtf.qase.customgoogleplay"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 14
+        versionCode 18
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    /*signingConfigs {
+    signingConfigs {
         debug {
             keyAlias DEBUG_KEY_ALIAS
             keyPassword DEBUG_KEY_PASSWORD
@@ -27,7 +27,7 @@ android {
             storeFile file(RELEASE_STORE_FILE)
             storePassword RELEASE_STORE_PASSWORD
         }
-    }*/
+    }
 
     buildTypes {
         debug {
@@ -37,7 +37,7 @@ android {
 
         release {
             buildConfigField "String", "PLAYSTORE_PUBLIC_KEY", "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8M+6kb4gWTD8QUAxHF6Jj4oFkSXywIYNKOvSMol60nvI++Shck9syUkawOoIc2p9gilmogTOt6MWBhwladZcQJTeHDJ/tDZZ0NqGCG35cVRr8vNruwChdY2u9Dv36kpWP+/aqwLjoE5gHAU6UC94P73trz7sJ2NPJkdZk5wmbDm/z3FmqpNjyHWaSAPdN7AarXiaF1Ceb7nqD8qKPF/dyj9rphLzJU6VlSPKsnuiBvRE1czqLTk6BNLoiYiUin8kU2j4dwq7IFBABguWc6RXz3EAKZYRY5JxSd6XsdhKLaNIYRU2oZKOpKXZnmoFevxarQYJAQVFbkUByPdvkxuSdQIDAQAB\""
-            // signingConfig signingConfigs.release
+            signingConfig signingConfigs.release
 
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

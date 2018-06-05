@@ -7,18 +7,15 @@ object Config {
 
     val xAPKS = arrayOf(XAPKFile(
         true,
-        4,
-        666154207L
+        16,
+        10951976L
     ))
 
     val xFILES = linkedMapOf(
-        "mtvu.mbtiles" to
-            XFile("/osmdroid/maps", 619723776L),
+        "data.img" to
+            XFile("/", 10240000L),
 
-        "addresses.sqlite" to
-            XFile("/osmdroid", 19939328L),
-
-        "spatialite.sqlite" to
-            XFile("/osmdroid", 266915840L)
+        "image.jpg" to
+            XFile("/", 711745L)
     )
 }

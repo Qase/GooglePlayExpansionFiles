@@ -176,7 +176,7 @@ class ExpansionFilesHelper(private val ctx: MainActivity) : IDownloaderClient {
 
         // TODO Replace constants
         val expansionFile = APKExpansionSupport.getAPKExpansionZipFile(
-            ctx, 4, 0
+            ctx, 16, 0
         )
 
         // TODO Do in IO thread
